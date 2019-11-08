@@ -7,7 +7,9 @@
         <p>
         <script>
             var foo = function (x) { return 2*x; };
-            document.write(foo(3));
+            foo = x => return 2*x;
+			
+			document.write(foo(3));
             document.write("<br>");
             document.write(typeof(foo));
             document.write("<br>");
