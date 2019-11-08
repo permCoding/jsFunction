@@ -6,8 +6,12 @@
     <body>
         <p>
         <script>
+			function my_func(x) {
+				return 2*x;
+			}
             var foo = function (x) { return 2*x; };
-            foo = (x) => return 2*x; // вариант со скобками
+            foo = (x) => 2*x; // вариант со скобками
+			foo = my_func;
 			
 			document.write(foo(3));
             document.write("<br>");
